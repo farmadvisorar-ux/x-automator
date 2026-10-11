@@ -281,6 +281,18 @@ def web(
     uvicorn.run("x_automator.web_app:app", host=host, port=port, reload=reload)
 
 
+@app.command()
+def tunnel(
+    port: int = typer.Option(8000, "--port", "-p", help="Port to tunnel"),
+):
+    """
+    Create a persistent, auto-reconnecting public hosted HTTPS URL for the web studio.
+    """
+    from .tunnel import start_tunnel
+    start_tunnel(local_port=port)
+
+
 if __name__ == "__main__":
     app()
+
 
