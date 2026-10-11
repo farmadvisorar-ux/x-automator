@@ -1,0 +1,23 @@
+[
+  {
+    "action": "post",
+    "text": "Excited to share our latest milestone with the community! 🚀 #buildinpublic #dev",
+    "status": "pending"
+  },
+  {
+    "action": "like",
+    "url": "https://x.com/OpenAI/status/1880000000000000000",
+    "status": "pending"
+  },
+  {
+    "action": "follow",
+    "user": "github",
+    "status": "pending"
+  },
+  {
+    "action": "reply",
+    "url": "https://x.com/OpenAI/status/1880000000000000000",
+    "text": "Great progress! Looking forward to seeing where this goes.",
+    "status": "pending"
+  }
+]
