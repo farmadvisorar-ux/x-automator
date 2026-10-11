@@ -21,6 +21,21 @@ A resilient, API-free browser automation engine for X.com (Twitter) built with P
   - Organic sleep jitter between actions (`human_sleep`).
   - Hides `navigator.webdriver` automation flags.
   - Native Google Chrome & Microsoft Edge channel fallback.
+- 🌐 **Web Studio Dashboard**: Full visual glassmorphic web dashboard with live activity logging, tweet compose, queue management, and REST API.
+
+---
+
+## 🌐 Web Studio Dashboard
+
+You can run the web dashboard locally or host it publicly:
+
+```powershell
+# Launch local web studio on port 8000
+uv run python main.py web --port 8000
+```
+Open **`http://localhost:8000`** in your browser.
+
+To expose as a public hosted URL, you can tunnel port 8000 (e.g. via SSH `ssh -T -o StrictHostKeyChecking=no -R 80:127.0.0.1:8000 nokey@localhost.run` or Cloudflare tunnel).
 
 ---
 
